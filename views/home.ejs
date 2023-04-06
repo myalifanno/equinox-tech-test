@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>10 Best Air Purifiers 2023</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="https://cdn.buyersguide.org/images/1/review_site_1_buyersguide_logo.svg" alt="Buyer's Guide Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Air Purifiers</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>10 Best Air Purifiers 2023</h1>
+        <h3>Join the millions that have trusted BuyersGuide.org to help them make smarter buying decisions. Let our independent expert reviews and data-driven shopping recommendations help you find the air purifier that's right for you.</h3>
+        <table>
+            <!-- <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Coverage</th>
+                </tr>
+            </thead> -->
+            <tbody>
+                <% data.forEach(el => { %>
+                    <tr>
+                        <td><img src="<%= el.brandIMG %>" alt="brandimg"></td>
+                        <td>
+                            <h2>
+                                <b><%= el.rating %> 
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span></b>
+                            </h2><br>
+                            <p><b><%= el.name %></b></p><br>
+                            <ul>
+                                <li><b>Coverage:</b> <%= el.coverage %></li>
+                                <li><b>Particle Removal:</b> <%= el.particleRemoval %></li>
+                                <li><b>Filter Type:</b> <%= el.filterType %></li>
+                                <li><b>Dimensions:</b> <%= el.dimensions %></li>
+                                <li><b>Effective For:</b> <%= el.effectiveFor %></li>
+                            </ul><br>
+                            <a href="">Read Full Review</a>
+                        </td>
+                        <td><img src="<%= el.itemIMG %>" alt="Item"></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Air Purifiers</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2023 Buyer's Guide</p>
+            <p>All rights reserved</p>
+            <p>Designed by M.Y.A</p>
+          </div>
+    </footer>
+</body>
+</html>
