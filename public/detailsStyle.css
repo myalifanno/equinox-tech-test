@@ -74,26 +74,19 @@
   .product-card p {
     margin-bottom: 1rem;
   }
-  
-  /* Apply styles to the product comparison table */
-  .comparison-table {
-    border-collapse: collapse;
-    margin-top: 2rem;
-    width: 100%;
+
+  .container {
+    display: flex;
   }
-  
-  .comparison-table th {
-    padding: 0.5rem;
-    text-align: center;
-    background-color: #007bff;
-    color: #fff;
+
+  .fixed {
+    width: 200px;
   }
-  
-  .comparison-table td {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
+
+  .flex-item {
+    flex-grow: 1;
   }
-  
+
   /* Apply styles to the footer */
   footer {
     padding: 1rem;
@@ -133,10 +126,12 @@
     text-align: left;
     font-size: 48px;
     margin: 20px 0;
+    color: #0251a5e1;
   }
 
   h2 {
     border-bottom: 2px solid rgb(7, 91, 236);
+    margin-bottom: 10px;
   }
   
   table {
@@ -152,11 +147,12 @@
   td {
     padding: 20px;
     text-align: left;
-    /* border-bottom: 2px solid rgb(214, 214, 214);
-    border-top: 2px solid rgb(214, 214, 214); */
-    border: 3px solid rgb(214, 214, 214);
   }
   
+  li {
+    margin: 10px 0;
+  }
+
   th {
     background-color: #4CAF50;
     color: white;
